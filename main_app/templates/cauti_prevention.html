@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %}Healthcare Research | Curevita Research{% endblock %}
+
+{% block content %}
+<br><br><br><br><br>
+<style>
+    .hero-background {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/assets/img/narmada_revier.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        padding: 100px 0;
+        margin-bottom: 50px;
+    }
+    
+    .paper-card {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: -80px;
+        background: white;
+    }
+    
+    .card-header {
+        padding: 25px;
+    }
+    
+    .card-body {
+        padding: 30px;
+    }
+    
+    .btn-download {
+        background-color: rgb(40, 56, 70);
+        border: none;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    
+    .btn-download:hover {
+        background-color: rgb(40, 56, 70);
+        transform: translateY(-2px);
+    }
+    
+    .btn-download, .btn-download:hover {
+        color: white !important;
+    }
+</style>
+
+<div class="hero-background text-center">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold text-white">Healthcare Research</h1>
+        <p class="lead">Effectiveness of Structured Teaching on Catheter-Associated Urinary Tract Infection (CAUTI) Prevention among Nurses at NMCH</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="paper-card">
+                <div class="card-header" style="background-color: #f0f7ff; color: #003366; border-bottom: 1px solid #d0e3ff;">
+                    <h3 class="text-center mb-0">Effectiveness of Structured Teaching on Catheter-Associated Urinary Tract Infection (CAUTI) Prevention among Nurses at NMCH</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Authors</h5>
+                            <p>Krishna Kant, Raju Kumar, Vivek Tiwari, Rajlaxmi Kumari, Shivanand Gupta, Sajjan Patel, K. Latha</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Published in</h5>
+                            <p>Frontiers of Health Innovations and Medical Advances (FHIMA), Vol 1, Issue 2, 2025</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <h4 class="mb-4">Abstract</h4>
+                    <div class="abstract-content">
+                        <p>
+                            Catheter-Associated Urinary Tract Infection (CAUTI) is one of the most prevalent and preventable healthcare-associated infections (HAIs), posing a serious challenge to patient safety worldwide. Urinary tract infections (UTIs) linked to indwelling catheter use account for approximately 40% of all hospital-acquired infections. The risk of developing CAUTI increases significantly with the duration of catheterization, improper insertion techniques, lack of hand hygiene, and non-compliance with catheter care protocols.
+                        </p>
+                        <p>
+                            This study aimed to assess the effectiveness of a structured teaching program on CAUTI prevention among staff nurses at NMCH. The research approach was descriptive, using a one-group design with 60 staff nurses who provide care to indwelling catheter patients. Data was collected through surveys and analyzed with descriptive and inferential statistics.
+                        </p>
+                        <p>
+                            Results showed significant improvement in knowledge levels: pre-test results indicated 37% had poor knowledge, 50% had fair knowledge, and only 13.3% had good knowledge. After the structured teaching program, only 10% had poor knowledge, 20% had fair knowledge, and 70% demonstrated good knowledge. The overall mean knowledge score improved to 82.73% with an SD of 5.10%.
+                        </p>
+                        <p>
+                            The study concludes that structured teaching programs significantly enhance nurses' knowledge and awareness of CAUTI prevention, emphasizing the importance of hand hygiene, aseptic catheter insertion, and strict compliance with care protocols. Continuous education and training interventions are essential to strengthen infection control practices and minimize healthcare-associated infections in clinical settings.
+                        </p>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <div class="text-center mt-5">
+                        <a href="/static/assets/pdf/Kant_etal_2025FHIMA_PaperID_001.pdf" class="btn btn-primary btn-lg text-white" download>
+                            <i class="fas fa-download mr-2"></i> Download (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer text-muted text-center">
+                    <small>
+                        Citation: Kant Krishna, Kumar Raju, Tiwari Vivek, Kumari Rajlaxmi, Gupta Shivanand, Patel Sajjan, Latha. 2025. Effectiveness of Structured Teaching on Catheter-Associated Urinary Tract Infection (CAUTI) Prevention among Nurses at NMCH. <em>Frontiers of Health Innovations and Medical Advances</em>, 1, 2, 1-6. https://doi.org/10.1000/002
+                    <br>
+                    </small>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+</div>
+{% endblock %}

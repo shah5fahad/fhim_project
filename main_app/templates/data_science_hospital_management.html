@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %}Healthcare Management Research | Curevita Research{% endblock %}
+
+{% block content %}
+<br><br><br><br><br>
+<style>
+    .hero-background {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/assets/img/narmada_revier.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        padding: 100px 0;
+        margin-bottom: 50px;
+    }
+    
+    .paper-card {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: -80px;
+        background: white;
+    }
+    
+    .card-header {
+        padding: 25px;
+    }
+    
+    .card-body {
+        padding: 30px;
+    }
+    
+    .btn-download {
+        background-color: rgb(40, 56, 70);
+        border: none;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    
+    .btn-download:hover {
+        background-color: rgb(40, 56, 70);
+        transform: translateY(-2px);
+    }
+    
+    .btn-download, .btn-download:hover {
+        color: white !important;
+    }
+</style>
+
+<div class="hero-background text-center">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold text-white">Healthcare Management Research</h1>
+        <p class="lead">The Role of Data Science in Hospital Management</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="paper-card">
+                <div class="card-header" style="background-color: #f0f7ff; color: #003366; border-bottom: 1px solid #d0e3ff;">
+                    <h3 class="text-center mb-0">The Role of Data Science in Hospital Management</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Authors</h5>
+                            <p>Sajjan Singh Patel, Ruchi Tripathi</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Published in</h5>
+                            <p>Frontiers of Health Innovations and Medical Advances (FHIMA), Vol 1, Issue 2, 2025</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <h4 class="mb-4">Abstract</h4>
+                    <div class="abstract-content">
+                        <p>
+                            The integration of data science into hospital management is transforming healthcare systems by improving patient outcomes, optimizing resource allocation, and enhancing operational efficiency. Hospitals face growing challenges due to increasing patient volumes, rising costs, and the demand for personalized care. Traditional management approaches often fall short in handling the complexity of modern healthcare systems.
+                        </p>
+                        <p>
+                            Data science, leveraging machine learning, artificial intelligence (AI), big data analytics, and advanced statistical methods, provides powerful tools to enhance hospital operations and deliver high-quality care. This paper examines the impact of data science in hospital management, exploring its applications across multiple domains including patient care optimization, operational efficiency, predictive analytics, financial management, and resource allocation.
+                        </p>
+                        <p>
+                            In patient care optimization, data science enables personalized medicine and early disease detection through predictive analytics. Machine learning algorithms analyze electronic health records (EHRs), medical imaging, and laboratory data to predict patient outcomes, optimize treatment plans, and improve care quality. For operational efficiency, data science tools help optimize staffing, streamline workflows, reduce wait times, and enhance patient flow management through real-time analytics that enable effective decision-making and reduce operational bottlenecks.
+                        </p>
+                        <p>
+                            The study also highlights challenges in implementing data science, including data security and patient privacy concerns that must be safeguarded through strict compliance with healthcare regulations such as HIPAA and GDPR. Additional barriers include integration of data across siloed hospital departments, lack of skilled data professionals, and high infrastructure costs. The paper concludes by discussing future directions, including greater use of AI-driven decision support systems, Internet of Things (IoT)-enabled patient monitoring, and telemedicine analytics.
+                        </p>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <div class="text-center mt-5">
+                        <a href="/static/assets/pdf/Patel_Tripathi_2025_FHIMA_PaperID_05.pdf" class="btn btn-primary btn-lg text-white" download>
+                            <i class="fas fa-download mr-2"></i> Download (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer text-muted text-center">
+                    <small>
+                        Citation: Patel Sajjan Singh, Tripathi Ruchi. 2025. The Role of Data Science in Hospital Management. <em>Frontiers of Health Innovations and Medical Advances (FHIMA)</em>, 1, 2, 55-58. https://doi.org/10.1000/005
+                    <br>
+                    </small>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+</div>
+{% endblock %}

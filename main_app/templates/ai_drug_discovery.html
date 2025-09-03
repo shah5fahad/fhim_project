@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %}Pharmaceutical AI Research | Curevita Research{% endblock %}
+
+{% block content %}
+<br><br><br><br><br>
+<style>
+    .hero-background {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/assets/img/narmada_revier.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        padding: 100px 0;
+        margin-bottom: 50px;
+    }
+    
+    .paper-card {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: -80px;
+        background: white;
+    }
+    
+    .card-header {
+        padding: 25px;
+    }
+    
+    .card-body {
+        padding: 30px;
+    }
+    
+    .btn-download {
+        background-color: rgb(40, 56, 70);
+        border: none;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    
+    .btn-download:hover {
+        background-color: rgb(40, 56, 70);
+        transform: translateY(-2px);
+    }
+    
+    .btn-download, .btn-download:hover {
+        color: white !important;
+    }
+</style>
+
+<div class="hero-background text-center">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold text-white">Pharmaceutical AI Research</h1>
+        <p class="lead">Comprehensive Review on the Role of Artificial Intelligence (AI) in Drug Discovery and Drug Development</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="paper-card">
+                <div class="card-header" style="background-color: #f0f7ff; color: #003366; border-bottom: 1px solid #d0e3ff;">
+                    <h3 class="text-center mb-0">Comprehensive Review on the Role of Artificial Intelligence (AI) in Drug Discovery and Drug Development</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Authors</h5>
+                            <p>Zahoor Ahmad Malik, Jitendra Bajaj, Neha Shukla</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Published in</h5>
+                            <p>Curevita Innovation of BioData Intelligence (CIBDI), Vol 1, Issue 1, 2025</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <h4 class="mb-4">Abstract</h4>
+                    <div class="abstract-content">
+                        <p>
+                            Artificial Intelligence (AI) has become a potent technology that might change the way healthcare works, from medicine delivery to drug discovery. This paper examines how AI is already being used and will be used in the future in the pharmaceutical business, with an emphasis on medication delivery and research. It discusses a wide range of applications including smart drug delivery networks, sensors, drug repurposing, statistical modeling, and simulating biological and biotechnological systems.
+                        </p>
+                        <p>
+                            The review explores how AI may be used in medication formulation and distribution, clinical trials, drug safety, and pharmacovigilance. It addresses the regulatory challenges and considerations that arise when implementing AI in the pharmaceutical industry, including privacy concerns, data security, and the interpretability of AI models. The traditional drug discovery process, which typically takes 10-15 years with high failure rates, can be significantly accelerated through AI applications.
+                        </p>
+                        <p>
+                            Key applications covered include target identification through analysis of genetic, protein, and medical record data; structure-activity relationship (SAR) modeling to optimize therapeutic potential; de novo drug development using generative models; drug repurposing by analyzing existing scientific data; toxicity prediction to identify potentially harmful compounds; and applications in pharmaceutical manufacturing for process optimization and quality control.
+                        </p>
+                        <p>
+                            The study concludes by looking at future trends, discussing the limitations and biases in AI models, and emphasizing the importance of collaboration and data sharing. It provides a comprehensive picture of how AI might transform the pharmaceutical sector and improve patient care, while also identifying areas where further research and development is needed.
+                        </p>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <div class="text-center mt-5">
+                        <a href="/static/assets/pdf/Malik_etal_1_2_2025_FHIMA_paperID_04.pdf" class="btn btn-primary btn-lg text-white" download>
+                            <i class="fas fa-download mr-2"></i> Download (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer text-muted text-center">
+                    <small>
+                        Citation: Malik Zahoor Ahmad, Jitendra Bajaj, Shukla Neha. 2025. A Comprehensive Review on the role of Artificial Intelligence (AI) in drug discovery and drug development. <em>Frontiers of Health Innovations and Medical Advances</em>, 1, 2, 24-54.
+                    <br>
+                    </small>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+</div>
+{% endblock %}

@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block title %}Medical Data Science Research | Curevita Research{% endblock %}
+
+{% block content %}
+<br><br><br><br><br>
+<style>
+    .hero-background {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/static/assets/img/narmada_revier.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: white;
+        padding: 100px 0;
+        margin-bottom: 50px;
+    }
+    
+    .paper-card {
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        overflow: hidden;
+        margin-top: -80px;
+        background: white;
+    }
+    
+    .card-header {
+        padding: 25px;
+    }
+    
+    .card-body {
+        padding: 30px;
+    }
+    
+    .btn-download {
+        background-color: rgb(40, 56, 70);
+        border: none;
+        padding: 12px 30px;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    
+    .btn-download:hover {
+        background-color: rgb(40, 56, 70);
+        transform: translateY(-2px);
+    }
+    
+    .btn-download, .btn-download:hover {
+        color: white !important;
+    }
+</style>
+
+<div class="hero-background text-center">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold text-white">Medical Data Science Research</h1>
+        <p class="lead">Data Intelligence Tools in Diabetes Mellitus: Applications, Methods, and Future Directions</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="paper-card">
+                <div class="card-header" style="background-color: #f0f7ff; color: #003366; border-bottom: 1px solid #d0e3ff;">
+                    <h3 class="text-center mb-0">Data Intelligence Tools in Diabetes Mellitus: Applications, Methods, and Future Directions</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Author</h5>
+                            <p>Kailash Prasad Jaiswal</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5 class="text-muted">Published in</h5>
+                            <p>Curevita Innovation of BioData Intelligence (CIBDI), Vol 1, Issue 1, 2025</p>
+                        </div>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <h4 class="mb-4">Abstract</h4>
+                    <div class="abstract-content">
+                        <p>
+                            Diabetes mellitus (DM) is a heterogeneous metabolic disorder characterized by chronic hyperglycemia resulting from defects in insulin secretion, insulin action, or both. Globally, the prevalence and economic burden of DM continue to rise, necessitating new approaches for prevention, diagnosis, clinical management, and health-system planning. Data intelligence (DI)—the integrated use of data engineering, analytics, machine learning (ML), and artificial intelligence (AI) within robust socio-technical systems—has emerged as a transformative enabler across the diabetes continuum of care.
+                        </p>
+                        <p>
+                            This paper critically reviews DI tools across the diabetes care continuum, spanning prevention, diagnosis, acute and chronic management, and system-level optimization. We categorize tools by data source and analytic approach, map them to clinical/operational outcomes, and propose methods to evaluate safety, efficacy, and equity. The data ecosystem encompasses clinical records, laboratory and imaging data, devices and wearables (CGM, insulin pumps), patient-reported outcomes, administrative data, genomic information, and social determinants of health.
+                        </p>
+                        <p>
+                            Key applications include prevention and early detection through screening models, diagnosis and classification using automated phenotyping, glycemic management with decision support systems, complication surveillance through computer vision and risk models, acute event prediction for hypoglycemia/DKA prevention, and population health optimization. The study also provides India-focused perspectives, noting that India is home to more than 101 million people living with diabetes, representing one of the largest affected populations globally.
+                        </p>
+                        <p>
+                            The paper outlines a research agenda for the next generation of trustworthy, human-centered AI in diabetes, emphasizing the need for collaborative efforts between clinicians, researchers, policymakers, and technology developers to ensure that DI transforms diabetes care into a more precise, proactive, and patient-centered discipline.
+                        </p>
+                    </div>
+                    
+                    <hr class="my-4">
+                    
+                    <div class="text-center mt-5">
+                        <a href="/static/assets/pdf/Jaiswal_et_al_2025FHIMAPaperID_003.pdf" class="btn btn-primary btn-lg text-white" download>
+                            <i class="fas fa-download mr-2"></i> Download (PDF)
+                        </a>
+                    </div>
+                </div>
+                <div class="card-footer text-muted text-center">
+                    <small>
+                        Citation: Jaiswal Kailash Prasad. 2025. Data Intelligence Tools in Diabetes Mellitus: Applications, Methods, and Future Directions. <em>Curevita Innovation of BioData Intelligence</em>, 1, 1, 13-23.
+                    <br>
+                    </small>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <br><br>
+</div>
+{% endblock %}
