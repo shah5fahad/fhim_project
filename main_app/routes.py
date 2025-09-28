@@ -41,6 +41,11 @@ def current_issue():
     return render_template('Current_issue.html')
 
 
+@app.route('/archive_issue')
+def archive_issue():
+    return render_template('archive_issue.html')
+
+
 @app.route('/respectful_maternity_care')
 def respectful_maternity_care():
     return render_template('respectful_maternity_care.html')

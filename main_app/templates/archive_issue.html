@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+
+{% block title %}Current Research Issues - Frontiers of Health Innovations and Medical Advances{% endblock %}
+
+{% block content %}
+<br><br><br><br>
+<style>
+    .research-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px;
+        margin-top: 20px;
+    }
+    .page-title {
+        color: #2c3e50;
+        margin-bottom: 40px;
+        padding-bottom: 15px;
+        border-bottom: 2px solid #3498db;
+        text-align: center;
+        font-weight: 600;
+    }
+    .research-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 25px;
+        margin-bottom: 25px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        border-left: 4px solid #3498db;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .research-card-link {
+        text-decoration: none;
+        color: inherit;
+    }
+    .research-card-link:hover .research-card {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        border-left: 4px solid #2980b9;
+    }
+    .research-card-link:active .research-card {
+        transform: translateY(-2px);
+    }
+    .research-title {
+        color: #2c3e50;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
+    .research-description {
+        color: #555;
+        margin-bottom: 20px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        flex-grow: 1;
+    }
+    .read-more-btn {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 8px 20px;
+        border-radius: 4px;
+        font-weight: 500;
+        transition: background-color 0.3s;
+        align-self: flex-start;
+    }
+    .research-card-link:hover .read-more-btn {
+        background-color: #2980b9;
+    }
+    .research-meta {
+        font-size: 0.9rem;
+        color: #7f8c8d;
+        margin-top: 15px;
+    }
+    @media (max-width: 768px) {
+        .research-card {
+            padding: 20px;
+        }
+        .research-title {
+            font-size: 1.1rem;
+        }
+    }
+</style>
+
+<div class="research-container">
+    <div class="container section-title" data-aos="fade-up">
+        <h1 lass="fw-bold ">Archive Published Issues</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4">
+            <a href="/cauti_prevention" class="research-card-link">
+                <div class="research-card">
+                    <h3 class="research-title">Effectiveness of Structured Teaching on CAUTI Prevention Among Nurses</h3>
+                    <p class="research-description">
+                        This study evaluates the impact of a structured teaching program on nurses' knowledge of Catheter-Associated Urinary Tract Infection (CAUTI) prevention. Results show significant improvement: pre-test knowledge was poor (37%) to fair (50%), while post-test showed 70% with good knowledge. The program enhanced awareness of hand hygiene, aseptic insertion, and care protocols.
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="research-meta">
+                        <span>Published: September 2025</span> | 
+                        <span>Category: Nursing Education & Infection Control</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4">
+            <a href="/respectful_maternity_care" class="research-card-link">
+                <div class="research-card">
+                    <h3 class="research-title">Knowledge Assessment of Respectful Maternity Care Among Midwives</h3>
+                    <p class="research-description">
+                        This study assesses midwives' knowledge of Respectful Maternity Care (RMC) at NMCH, Jamuhar. Results show strong conceptual awareness (87.3% in General Knowledge) but practical challenges in implementation (75.7% in Challenges & Solutions). Higher education levels significantly correlated with better RMC knowledge, highlighting the importance of targeted training.
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="research-meta">
+                        <span>Published: September 2025</span> | 
+                        <span>Category: Maternal Health & Nursing</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4">
+            <a href="/diabetes_data_intelligence" class="research-card-link">
+                <div class="research-card">
+                    <h3 class="research-title">Data Intelligence Tools in Diabetes Mellitus: Applications and Future Directions</h3>
+                    <p class="research-description">
+                        This comprehensive review explores how data intelligence (AI, machine learning) transforms diabetes care across prevention, diagnosis, and management. The study covers applications from glycemic control and complication surveillance to India-specific digital health initiatives, highlighting how these tools enable personalized, proactive diabetes care.
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="research-meta">
+                        <span>Published: September 2025</span> | 
+                        <span>Category: Medical Data Science & Diabetes Care</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4">
+            <a href="/ai_drug_discovery" class="research-card-link">
+                <div class="research-card">
+                    <h3 class="research-title">AI in Drug Discovery and Development: Comprehensive Review</h3>
+                    <p class="research-description">
+                        This comprehensive review examines how artificial intelligence transforms pharmaceutical research, from drug discovery to manufacturing. The study covers AI applications in target identification, drug design, toxicity prediction, clinical trials, and pharmaceutical manufacturing, highlighting how AI accelerates development while reducing costs and time.
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="research-meta">
+                        <span>Published: September 2025</span> | 
+                        <span>Category: Pharmaceutical AI & Drug Development</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 col-lg-4 mb-4">
+            <a href="/data_science_hospital_management" class="research-card-link">
+                <div class="research-card">
+                    <h3 class="research-title">The Role of Data Science in Hospital Management</h3>
+                    <p class="research-description">
+                        This study examines how data science transforms healthcare systems by improving patient outcomes, optimizing resource allocation, and enhancing operational efficiency. The research explores applications in patient care optimization, predictive analytics, financial management, and resource allocation, while addressing implementation challenges and future directions.
+                    </p>
+                    <button class="read-more-btn">Read More</button>
+                    <div class="research-meta">
+                        <span>Published: September 2025</span> | 
+                        <span>Category: Healthcare Data Science & Management</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+                
+        
+    </div>
+</div>
+
+<br><br><br>
+
+{% endblock %}
